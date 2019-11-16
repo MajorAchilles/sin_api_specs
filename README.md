@@ -83,7 +83,8 @@ Gets you the list of topics currently in use.
 
 |Parameter| Values|Default Value|Multi-value| Description |Example|
  | --- | --- | --- | :---: | --- | --- |
-| `status` | `active`, `inactive` | `active`  | :x: | Filters the list of topics by their status. `active` topics are in use. `inactive` topics have been retired.|   `?sortBy=label`|
+| `status` | `active`, `inactive` | `active`  | :x: | Filters the list of topics by their status. `active` topics are in use. `inactive` topics have been retired.|   `?status=inactive`|
+| `owner` | `sin`, `{user-id}` | `sin`  | :x: | Filters the list of topics by their owner. As of now, only topics created by SIN are available.|   `?owner={some-user-id}`|
 | `sortBy` | `label`, `weightage` | `label`  |  :x: |Sorts the list of query parameters by given key. Weightage is decided by product team to enforce a topic precedence bias.|   `?sortBy=label`|
 | `location` | [ISO 3166 2 Letter Country Codes](https://www.iban.com/country-codes)| `in`|:white_check_mark: | The country codes used to localize topics. |`?location=uk`, `?location=in,us,fr,uk`|
 | `language` | [ISO 639-2 2 Letter Language Codes](https://www.iban.com/country-codes)| `en`|:white_check_mark: | The language codes used to localize topics. |`?location=de`, `?location=en,hi,de,as`|
@@ -93,33 +94,43 @@ Gets you the list of topics currently in use.
 ```
 data: [
 	{
-		 id: xxxxxxx,
-		 label: "Destiny",
-		 i18n: {
-			 "en": "Destiny",
-			 "as": "भाग्य",
-			 "es": "Destino",
-			 "jp": "宿命"
-		 },
-		 locations: ["in", "mx", "pr", "ag", "uk", "us", "jp"],
-		 ageRange: ["10-14", "14-18", "18-25", "25-35"],
-		 weightage: 100,
-		 status: "active"
-	 },
-	 {
-		 id: yyyyyyy,
-		 label: "Science",
-		 i18n: {
-			 "en": "Science",
-			 "de": "Wissenschaft",
-			 "it": "Scienza",
-			 "hb": "מדע"
-		 },
-		 locations: ["in", "is", "it", "ag", "uk", "us", "jp"],
-		 ageRange: ["10-14", "14-18", "18-25", "25-35, "35-60", "60+"],
-		 weightage: 90,
-		 "inactive"
-	 }
+		id: xxxxxxx,
+		label: "Destiny",
+		i18n: {
+			"en": "Destiny",
+			"as": "भाग्य",
+			"es": "Destino",
+			"jp": "宿命"
+		},
+		locations: ["in", "mx", "pr", "ag", "uk", "us", "jp"],
+		ageRange: ["10-14", "14-18", "18-25", "25-35"],
+		weightage: 100,
+		status: "active",
+		owner: "sin",
+		creationDate: "2019-11-16T09:59:26.901Z",
+		createdBy: "ulwyqpojfvefn8p5",
+		updationDate: "2019-11-16T09:59:26.901Z",
+		updatedBy: "ulwyqpojfvefn8p5"
+	},
+	{
+		id: yyyyyyy,
+		label: "Science",
+		i18n: {
+			"en": "Science",
+			"de": "Wissenschaft",
+			"it": "Scienza",
+			"hb": "מדע"
+		},
+		locations: ["in", "is", "it", "ag", "uk", "us", "jp"],
+		ageRange: ["10-14", "14-18", "18-25", "25-35, "35-60", "60+"],
+		weightage: 90,
+		status: "inactive",
+		owner: "sin",
+		creationDate: "2019-11-16T09:59:26.901Z",
+		createdBy: "2r926m11dmwfrg5t",
+		updationDate: "2019-11-17T10:19:26.901Z",
+		updatedBy: "ulwyqpojfvefn8p5"
+	}
 ]
 ```
 
