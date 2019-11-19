@@ -23,7 +23,7 @@ data: [
 		label: "Destiny",
 		i18n: {
 			"en": "Destiny",
-			"as": "भाग्य",
+			"hi": "भाग्य",
 			"es": "Destino",
 			"jp": "宿命"
 		},
@@ -69,7 +69,7 @@ Create a new topic.
 
 |      Key     |      Type     |    Required      |    Default Value    | Description |    Example      | 
 |     ---      |     ---       |      :---:       |         ---         |     ---     |      ---        |
-| `label`      |    `string`   |:white_check_mark:|                     | Filters the list of topics by their status. `active` topics are in use. `inactive` topics have been retired. |`Movies`|
+| `label`      |    `string`   |:white_check_mark:|                     | The label of the topic. This should be in english and is automatically included in the translation list. |`Movies`|
 | `i18n`       |    `object`   |       :x:        |  `{ en: <Label> }`  | The list of translations against languages keys. |`{ "zh": "电影" }`|
 | `locations`  |`array<string>`|       :x:        |                     | The list of countries to localize to. Leave empty for global context. |`["in", "uk", "us"]`|
 | `ageRange`   |`array<string>`|       :x:        |                     | The age groups to target. Leave empty to target all. |`["in", "uk", "us"]`|
@@ -90,8 +90,7 @@ Create a new topic.
 }
 ```
 
-
-### `PUT api/v1/topics`
+### `PATCH api/v1/topics`
 
 Updates an existing topic.
 

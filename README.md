@@ -1,20 +1,14 @@
+
 # Say It Now 
-## VERSION 1
+## Current Version:
+`Version 1`
+
+## General API structure:
+
+`{METHOD} {domain}/api/v{versionNumber}/{resourcePath}`
 
 
-### Get Polls
-
-Endpoint:  `api/v1/polls/<topic>`
-
-### Submit Vote
-Endpoint:  `api/v1/votes/submit`
-
-
-
-### All `{METHOD} {domain}/api/v{versionNumber}/{resourcePath}`
-
-
-#### All API endpoints return data in the modified [jsend](https://github.com/omniti-labs/jsend) format: 
+### All API endpoints return data in the modified [jsend](https://github.com/omniti-labs/jsend) format: 
 ```
 {
 	status: {
@@ -36,7 +30,18 @@ Endpoint:  `api/v1/votes/submit`
 }
 ```
 
-[TOPICS](./Topics.md)
+## Entities
+* [Topics](./topics.md)
+* [Polls](./polls.md)
+* [Votes](./votes.md)
+* [Users](./users.md) :construction:
+* [User Created Polls](./userPolls.md) :construction:
+* [Campaigns](./campaigns.md) :construction:
+
+### Submit Vote
+
+Endpoint:  `api/v1/votes`
+
 
 ### Create Poll : `api/v1/polls/create`
 
