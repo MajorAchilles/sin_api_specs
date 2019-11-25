@@ -1,4 +1,5 @@
 # TOPICS
+
 ##  Get List of Topics
 ### `GET api/v1/topics`
 
@@ -59,7 +60,7 @@ data: [
 ]
 ```
 
-## Create Topic : `POST api/v1/topics`
+## Create Topic
 
 ### `POST api/v1/topics`
 
@@ -90,6 +91,7 @@ Create a new topic.
 }
 ```
 
+## Update an exisiting topic
 ### `PATCH api/v1/topics`
 
 Updates an existing topic.

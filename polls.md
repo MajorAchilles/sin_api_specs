@@ -1,4 +1,5 @@
 # POLLS
+
 ##  Get List of Polls
 ### `GET api/v1/polls`
 
@@ -34,7 +35,6 @@ data: [
 					"es": "Si",
 					"jp": "はい"
 				}
-				currentVotes: 123
 			},
 			{
 				id: 2,
@@ -45,7 +45,6 @@ data: [
 					"es": "No",
 					"jp": "いや"
 				}
-				currentVotes: 11
 			},
 			{
 				id: 3,
@@ -56,9 +55,23 @@ data: [
 					"es": "Tal vez",
 					"jp": "多分"
 				}
-				currentVotes: 3
 			}
-		]
+		],
+		votes: [
+			{
+				optionKey: 1,
+				voteCount: 2
+			}, {
+				optionKey: 2,
+				voteCount: 0
+			}, {
+				optionKey: 3,
+				voteCount: 4
+			}, {
+				optionKey: 4,
+				voteCount: 9
+			}
+		],
 		owner: "sin",
 		creationDate: "2019-11-16T09:59:26.901Z",
 		createdBy: "ulwyqpojfvefn8p5",
