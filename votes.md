@@ -40,8 +40,8 @@ Gets you the the votes casted.
 
 |Parameter| Values|Default Value|Multi-value| Description |Example|
 | --- | --- | --- | :---: | --- | --- |
-| `pollID` | `{pollId}` |  |  :x: |Gets the votes related to a given poll.|   `?pollID=pollId`|
-| `caster` | `{user-id}` | `*`  | :x: | Filters the list of votes by their caster. |   `?caster={some-user-id}`|
+| `pollID` | `:pollId` |  |  :x: |Gets the votes related to a given poll.|   `?pollID=:pollId`|
+| `caster` | `:user-id` | `*`  | :x: | Filters the list of votes by their caster. |   `?caster=:user-id`|
 
 **Returns:** 
 ```
@@ -58,7 +58,7 @@ data: [
 
 
 ## Submit a new vote
-### `POST api/v1/polls/{pollID}/votes`
+### `POST api/v1/polls/:pollId/votes`
 
 Submits a vote. Returns the updated vote metadata for the given poll.
 
@@ -66,7 +66,6 @@ Submits a vote. Returns the updated vote metadata for the given poll.
 
 |      Key     |      Type     |    Required      |    Default Value    | Description |    Example      | 
 |     ---      |     ---       |      :---:       |         ---         |     ---     |      ---        |
-| `pollId`      |    `string`   |:white_check_mark:|                     | The poll to cast the vote in. |`r1ks1r5y3wim66xw`|
 | `optionKey`      |    `string`   |:white_check_mark:|                     | The unique key of the option selected by the user. |`1`|
 | `optionKeys`      |    `string`   |:construction:|                     | [In Progress] To be used for multi option voting. |N/A|
 
@@ -74,7 +73,6 @@ Submits a vote. Returns the updated vote metadata for the given poll.
 **Example**
 ```
 {
-    pollId: pidxxxxx,
     optionKey: 2
 }
 ```

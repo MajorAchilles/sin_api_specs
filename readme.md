@@ -34,6 +34,7 @@
 * [Topics](./topics.md)
 * [Polls](./polls.md)
 * [Votes](./votes.md)
+* [Tags](./tags.md)
 * [Users](./users.md) :construction:
 * [User Created Polls](./userPolls.md) :construction:
 * [Campaigns](./campaigns.md) :construction:
