@@ -19,44 +19,44 @@ Gets you the list of topics currently in use.
 **Returns:** 
 ```
 data: [
-	{
-		id: xxxxxxx,
-		label: "Destiny",
-		i18n: {
-			"en": "Destiny",
-			"hi": "भाग्य",
-			"es": "Destino",
-			"jp": "宿命"
-		},
-		locations: ["in", "mx", "pr", "ag", "uk", "us", "jp"],
-		ageRange: ["10-14", "14-18", "18-25", "25-35"],
-		weightage: 100,
-		status: "active",
-		owner: "sin",
-		creationDate: "2019-11-16T09:59:26.901Z",
-		createdBy: "ulwyqpojfvefn8p5",
-		updationDate: "2019-11-16T09:59:26.901Z",
-		updatedBy: "ulwyqpojfvefn8p5"
-	},
-	{
-		id: yyyyyyy,
-		label: "Science",
-		i18n: {
-			"en": "Science",
-			"de": "Wissenschaft",
-			"it": "Scienza",
-			"hb": "מדע"
-		},
-		locations: ["in", "is", "it", "ag", "uk", "us", "jp"],
-		ageRange: ["10-14", "14-18", "18-25", "25-35, "35-60", "60+"],
-		weightage: 90,
-		status: "inactive",
-		owner: "sin",
-		creationDate: "2019-11-16T09:59:26.901Z",
-		createdBy: "2r926m11dmwfrg5t",
-		updationDate: "2019-11-17T10:19:26.901Z",
-		updatedBy: "ulwyqpojfvefn8p5"
-	}
+    {
+        id: xxxxxxx,
+        label: "Destiny",
+        i18n: {
+            "en": "Destiny",
+            "hi": "भाग्य",
+            "es": "Destino",
+            "jp": "宿命"
+        },
+        locations: ["in", "mx", "pr", "ag", "uk", "us", "jp"],
+        ageRange: ["10-14", "14-18", "18-25", "25-35"],
+        weightage: 100,
+        status: "active",
+        owner: "sin",
+        creationDate: "2019-11-16T09:59:26.901Z",
+        createdBy: "ulwyqpojfvefn8p5",
+        updationDate: "2019-11-16T09:59:26.901Z",
+        updatedBy: "ulwyqpojfvefn8p5"
+    },
+    {
+        id: yyyyyyy,
+        label: "Science",
+        i18n: {
+            "en": "Science",
+            "de": "Wissenschaft",
+            "it": "Scienza",
+            "hb": "מדע"
+        },
+        locations: ["in", "is", "it", "ag", "uk", "us", "jp"],
+        ageRange: ["10-14", "14-18", "18-25", "25-35, "35-60", "60+"],
+        weightage: 90,
+        status: "inactive",
+        owner: "sin",
+        creationDate: "2019-11-16T09:59:26.901Z",
+        createdBy: "2r926m11dmwfrg5t",
+        updationDate: "2019-11-17T10:19:26.901Z",
+        updatedBy: "ulwyqpojfvefn8p5"
+    }
 ]
 ```
 
@@ -79,15 +79,15 @@ Create a new topic.
 **Example**
 ```
 {
-	label: "Movies",
-	i18n: {
-		"pr": "Filmes",
-		"ru": "Фильмы",
-		"zh": "电影"
-	}, // List of alternative language codes and translations. English translations are ignored and label is picked.
-	locations: [], // ISO Country codes or empty for global
-	ageRange: [], // Valid age ranges or empty for all ranges
-	weightage: 0, // Weightage value as per product team's requirement.
+    label: "Movies",
+    i18n: {
+        "pr": "Filmes",
+        "ru": "Фильмы",
+        "zh": "电影"
+    }, // List of alternative language codes and translations. English translations are ignored and label is picked.
+    locations: [], // ISO Country codes or empty for global
+    ageRange: [], // Valid age ranges or empty for all ranges
+    weightage: 0, // Weightage value as per product team's requirement.
 }
 ```
 
@@ -110,15 +110,15 @@ Updates an existing topic.
 **Example**
 ```
 {
-	id: "5g6pestjzkuwrnpu",
-	label: "Movies",
-	i18n: {
-		"pr": "Filmes",
-		"ru": "Фильмы",
-		"zh": "电影"
-	}, // List of alternative language codes and translations. English translations are ignored and label is picked.
-	locations: [], // ISO Country codes or empty for global
-	ageRange: [], // Valid age ranges or empty for all ranges
-	weightage: 70, // Weightage value as per product team's requirement.
+    id: "5g6pestjzkuwrnpu",
+    label: "Movies",
+    i18n: {
+        "pr": "Filmes",
+        "ru": "Фильмы",
+        "zh": "电影"
+    }, // List of alternative language codes and translations. English translations are ignored and label is picked.
+    locations: [], // ISO Country codes or empty for global
+    ageRange: [], // Valid age ranges or empty for all ranges
+    weightage: 70, // Weightage value as per product team's requirement.
 }
 ```

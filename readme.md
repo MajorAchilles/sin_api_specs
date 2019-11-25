@@ -11,22 +11,22 @@
 ### All API endpoints return data in the modified [jsend](https://github.com/omniti-labs/jsend) format: 
 ```
 {
-	status: {
-		type: ""
-		
-		// Success: as is.
-		// Error: Critical resource/logic/db failure.
-		// Fail: "validation failures"
-		// Other operation specific messages can be added here if required. eg: code: 404.
-	},
-	data: {
-		// Application specific data goes here. Should be present only if status is success. Omit otherwise.
-	},
-	message: {
-		title: "", // Relevant and mandatory messages,
-		description: "" // If further explanations are required, empty otherwise. Key must be present.
-		// Other operation specific messages can be added here if required. eg: stack, lineNo etc
-	},
+    status: {
+        type: ""
+        
+        // Success: as is.
+        // Error: Critical resource/logic/db failure.
+        // Fail: "validation failures"
+        // Other operation specific messages can be added here if required. eg: code: 404.
+    },
+    data: {
+        // Application specific data goes here. Should be present only if status is success. Omit otherwise.
+    },
+    message: {
+        title: "", // Relevant and mandatory messages,
+        description: "" // If further explanations are required, empty otherwise. Key must be present.
+        // Other operation specific messages can be added here if required. eg: stack, lineNo etc
+    },
 }
 ```
 

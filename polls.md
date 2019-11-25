@@ -15,69 +15,69 @@ Gets you the list of polls currently in use.
 **Returns:** 
 ```
 data: [
-	{
-		id: xxxxxxx,
-		topicID: tpxxxxx,
-		question: "Should Destiny 2 be free to play?",
-		i18n: {
-			"en": "Should Destiny 2 be free to play?",
-			"hi": "क्या डेस्टिनी 2 को खेलने के लिए स्वतंत्र होना चाहिए?",
-			"es": "¿Debería Destiny 2 jugar gratis?",
-			"jp": "Destiny 2は無料でプレイできますか？"
-		},
-		options: [
-			{
-				id: 1,
-				text: "Yes",
-				i18n: {
-					"en": "Yes",
-					"hi": "हाँ",
-					"es": "Si",
-					"jp": "はい"
-				}
-			},
-			{
-				id: 2,
-				text: "No",
-				i18n: {
-					"en": "Yes",
-					"hi": "नहीं",
-					"es": "No",
-					"jp": "いや"
-				}
-			},
-			{
-				id: 3,
-				text: "Maybe",
-				i18n: {
-					"en": "Yes",
-					"hi": "शायद",
-					"es": "Tal vez",
-					"jp": "多分"
-				}
-			}
-		],
-		votes: [
-			{
-				optionKey: 1,
-				voteCount: 2
-			}, {
-				optionKey: 2,
-				voteCount: 0
-			}, {
-				optionKey: 3,
-				voteCount: 4
-			}, {
-				optionKey: 4,
-				voteCount: 9
-			}
-		],
-		owner: "sin",
-		creationDate: "2019-11-16T09:59:26.901Z",
-		createdBy: "ulwyqpojfvefn8p5",
-		updationDate: "2019-11-16T09:59:26.901Z",
-		updatedBy: "ulwyqpojfvefn8p5"
-	}
+    {
+        id: xxxxxxx,
+        topicID: tpxxxxx,
+        question: "Should Destiny 2 be free to play?",
+        i18n: {
+            "en": "Should Destiny 2 be free to play?",
+            "hi": "क्या डेस्टिनी 2 को खेलने के लिए स्वतंत्र होना चाहिए?",
+            "es": "¿Debería Destiny 2 jugar gratis?",
+            "jp": "Destiny 2は無料でプレイできますか？"
+        },
+        options: [
+            {
+                id: 1,
+                text: "Yes",
+                i18n: {
+                    "en": "Yes",
+                    "hi": "हाँ",
+                    "es": "Si",
+                    "jp": "はい"
+                }
+            },
+            {
+                id: 2,
+                text: "No",
+                i18n: {
+                    "en": "Yes",
+                    "hi": "नहीं",
+                    "es": "No",
+                    "jp": "いや"
+                }
+            },
+            {
+                id: 3,
+                text: "Maybe",
+                i18n: {
+                    "en": "Yes",
+                    "hi": "शायद",
+                    "es": "Tal vez",
+                    "jp": "多分"
+                }
+            }
+        ],
+        votes: [
+            {
+                optionKey: 1,
+                voteCount: 2
+            }, {
+                optionKey: 2,
+                voteCount: 0
+            }, {
+                optionKey: 3,
+                voteCount: 4
+            }, {
+                optionKey: 4,
+                voteCount: 9
+            }
+        ],
+        owner: "sin",
+        creationDate: "2019-11-16T09:59:26.901Z",
+        createdBy: "ulwyqpojfvefn8p5",
+        updationDate: "2019-11-16T09:59:26.901Z",
+        updatedBy: "ulwyqpojfvefn8p5"
+    }
 ]
 ```
 
@@ -99,46 +99,46 @@ Create a new poll.
 **Example**
 ```
 {
-	topicID: tpxxxxx,
-	question: "Should Destiny 2 be free to play?",
-	i18n: {
-		"en": "Should Destiny 2 be free to play?",
-		"hi": "क्या डेस्टिनी 2 को खेलने के लिए स्वतंत्र होना चाहिए?",
-		"es": "¿Debería Destiny 2 jugar gratis?",
-		"jp": "Destiny 2は無料でプレイできますか？"
-	},
-	options: [
-		{
-			id: 1,
-			text: "Yes",
-			i18n: {
-				"en": "Yes",
-				"hi": "हाँ",
-				"es": "Si",
-				"jp": "はい"
-			}
-		},
-		{
-			id: 2,
-			text: "No",
-			i18n: {
-				"en": "Yes",
-				"hi": "नहीं",
-				"es": "No",
-				"jp": "いや"
-			}
-		},
-		{
-			id: 3,
-			text: "Maybe",
-			i18n: {
-				"en": "Yes",
-				"hi": "शायद",
-				"es": "Tal vez",
-				"jp": "多分"
-			}
-		}
-	]
+    topicID: tpxxxxx,
+    question: "Should Destiny 2 be free to play?",
+    i18n: {
+        "en": "Should Destiny 2 be free to play?",
+        "hi": "क्या डेस्टिनी 2 को खेलने के लिए स्वतंत्र होना चाहिए?",
+        "es": "¿Debería Destiny 2 jugar gratis?",
+        "jp": "Destiny 2は無料でプレイできますか？"
+    },
+    options: [
+        {
+            id: 1,
+            text: "Yes",
+            i18n: {
+                "en": "Yes",
+                "hi": "हाँ",
+                "es": "Si",
+                "jp": "はい"
+            }
+        },
+        {
+            id: 2,
+            text: "No",
+            i18n: {
+                "en": "Yes",
+                "hi": "नहीं",
+                "es": "No",
+                "jp": "いや"
+            }
+        },
+        {
+            id: 3,
+            text: "Maybe",
+            i18n: {
+                "en": "Yes",
+                "hi": "शायद",
+                "es": "Tal vez",
+                "jp": "多分"
+            }
+        }
+    ]
 }
 ```
 
@@ -160,47 +160,47 @@ Updates an existing poll.
 **Example**
 ```
 {
-	id: xxxxxxx,
-	topicID: tpxxxxx,
-	question: "Should Destiny 2 be free to play?",
-	i18n: {
-		"en": "Should Destiny 2 be free to play?",
-		"hi": "क्या डेस्टिनी 2 को खेलने के लिए स्वतंत्र होना चाहिए?",
-		"es": "¿Debería Destiny 2 jugar gratis?",
-		"jp": "Destiny 2は無料でプレイできますか？"
-	},
-	options: [
-		{
-			id: 1,
-			text: "Yes",
-			i18n: {
-				"en": "Yes",
-				"hi": "हाँ",
-				"es": "Si",
-				"jp": "はい"
-			}
-		},
-		{
-			id: 2,
-			text: "No",
-			i18n: {
-				"en": "Yes",
-				"hi": "नहीं",
-				"es": "No",
-				"jp": "いや"
-			}
-		},
-		{
-			id: 3,
-			text: "Not Sure",
-			i18n: {
-				"en": "Not Sure",
-				"hi": "शायद",
-				"es": "Tal vez",
-				"jp": "多分"
-			}
-		}
-	]
+    id: xxxxxxx,
+    topicID: tpxxxxx,
+    question: "Should Destiny 2 be free to play?",
+    i18n: {
+        "en": "Should Destiny 2 be free to play?",
+        "hi": "क्या डेस्टिनी 2 को खेलने के लिए स्वतंत्र होना चाहिए?",
+        "es": "¿Debería Destiny 2 jugar gratis?",
+        "jp": "Destiny 2は無料でプレイできますか？"
+    },
+    options: [
+        {
+            id: 1,
+            text: "Yes",
+            i18n: {
+                "en": "Yes",
+                "hi": "हाँ",
+                "es": "Si",
+                "jp": "はい"
+            }
+        },
+        {
+            id: 2,
+            text: "No",
+            i18n: {
+                "en": "Yes",
+                "hi": "नहीं",
+                "es": "No",
+                "jp": "いや"
+            }
+        },
+        {
+            id: 3,
+            text: "Not Sure",
+            i18n: {
+                "en": "Not Sure",
+                "hi": "शायद",
+                "es": "Tal vez",
+                "jp": "多分"
+            }
+        }
+    ]
 }
 ```
 
@@ -211,26 +211,26 @@ Options are the collection of responses available against a poll. There must be 
 **Structure of the options collection**
 ```
 options: [
-		{
-			id: 1,
-			text: "Yes",
-			i18n: {
-				"en": "Yes",
-				"hi": "हाँ",
-				"es": "Si",
-				"jp": "はい"
-			}
-		},
-		{
-			id: 2,
-			text: "No",
-			i18n: {
-				"en": "Yes",
-				"hi": "नहीं",
-				"es": "No",
-				"jp": "いや"
-			}
-		}
-	]
+        {
+            id: 1,
+            text: "Yes",
+            i18n: {
+                "en": "Yes",
+                "hi": "हाँ",
+                "es": "Si",
+                "jp": "はい"
+            }
+        },
+        {
+            id: 2,
+            text: "No",
+            i18n: {
+                "en": "Yes",
+                "hi": "नहीं",
+                "es": "No",
+                "jp": "いや"
+            }
+        }
+    ]
 ```
 While create a poll, a minimum of two options must be passed. The `i18n` object is optional. The english translation (`en`) is auto-generated from the text. Any `en` translation string passed in the `i18n` object is ignored.

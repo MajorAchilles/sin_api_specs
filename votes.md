@@ -1,4 +1,4 @@
-# POLLS
+# VOTES
 
 ##  Get Vote Count for a given poll
 ### `GET api/v1/polls/{pollID}/votes`
@@ -11,22 +11,22 @@ _N/A_
 **Returns:** 
 ```
 data: {
-	pollID: pidxxxxx,
-	votes: [
-		{
-			optionKey: 1,
-			voteCount: 2
-		}, {
-			optionKey: 2,
-			voteCount: 0
-		}, {
-			optionKey: 3,
-			voteCount: 4
-		}, {
-			optionKey: 4,
-			voteCount: 9
-		}
-	]
+    pollID: pidxxxxx,
+    votes: [
+        {
+            optionKey: 1,
+            voteCount: 2
+        }, {
+            optionKey: 2,
+            voteCount: 0
+        }, {
+            optionKey: 3,
+            voteCount: 4
+        }, {
+            optionKey: 4,
+            voteCount: 9
+        }
+    ]
 }
 ```
 
@@ -41,18 +41,18 @@ Gets you the the votes casted.
 |Parameter| Values|Default Value|Multi-value| Description |Example|
 | --- | --- | --- | :---: | --- | --- |
 | `pollID` | `{pollId}` |  |  :x: |Gets the votes related to a given poll.|   `?pollID=pollId`|
-| `caster` | `{user-id}` | `sin`  | :x: | Filters the list of votes by their caster. |   `?caster={some-user-id}`|
+| `caster` | `{user-id}` | `*`  | :x: | Filters the list of votes by their caster. |   `?caster={some-user-id}`|
 
 **Returns:** 
 ```
 data: [
-	{
-		id: xxxxxxx,
-		pollID: tpxxxxx,
-		optionKey: 1,
-		creationDate: "2019-11-16T09:59:26.901Z",
-		createdBy: "udxxxxx"
-	}
+    {
+        id: xxxxxxx,
+        pollID: tpxxxxx,
+        optionKey: 1,
+        creationDate: "2019-11-16T09:59:26.901Z",
+        createdBy: "udxxxxx"
+    }
 ]
 ```
 
@@ -74,29 +74,29 @@ Submits a vote. Returns the updated vote metadata for the given poll.
 **Example**
 ```
 {
-	pollId: pidxxxxx,
-	optionKey: 2
+    pollId: pidxxxxx,
+    optionKey: 2
 }
 ```
 
 **Returns:** 
 ```
 data: {
-	pollID: pidxxxxx,
-	votes: [
-		{
-			optionKey: 1,
-			voteCount: 2
-		}, {
-			optionKey: 2,
-			voteCount: 0
-		}, {
-			optionKey: 3,
-			voteCount: 4
-		}, {
-			optionKey: 4,
-			voteCount: 9
-		}
-	]
+    pollID: pidxxxxx,
+    votes: [
+        {
+            optionKey: 1,
+            voteCount: 2
+        }, {
+            optionKey: 2,
+            voteCount: 0
+        }, {
+            optionKey: 3,
+            voteCount: 4
+        }, {
+            optionKey: 4,
+            voteCount: 9
+        }
+    ]
 }
 ```
