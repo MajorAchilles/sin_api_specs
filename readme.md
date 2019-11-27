@@ -35,6 +35,8 @@
 * [Polls](./polls.md)
 * [Votes](./votes.md)
 * [Tags](./tags.md)
+* [Locations](./locations.md)
+* [Age Ranges](./ageRanges.md)
 * [Users](./users.md) :construction:
 * [User Created Polls](./userPolls.md) :construction:
 * [Campaigns](./campaigns.md) :construction:

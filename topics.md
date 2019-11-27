@@ -29,7 +29,7 @@ data: [
             "jp": "宿命"
         },
         locations: ["in", "mx", "pr", "ag", "uk", "us", "jp"],
-        ageRange: ["10-14", "14-18", "18-25", "25-35"],
+        ageRange: ["aidxxx1", "aidxxx2", "aidxxx3", "aidxxx4"],
         defaultTags: ["tidxx1, "tidxx2"],
         weightage: 100,
         status: "active",
@@ -49,7 +49,7 @@ data: [
             "hb": "מדע"
         },
         locations: ["in", "is", "it", "ag", "uk", "us", "jp"],
-        ageRange: ["10-14", "14-18", "18-25", "25-35, "35-60", "60+"],
+        ageRange: ["aidxxx1", "aidxxx2", "aidxxx3"],
         defaultTags: ["tidxx6],
         weightage: 90,
         status: "inactive",
@@ -74,8 +74,8 @@ Create a new topic.
 |     ---      |     ---       |      :---:       |         ---         |     ---     |      ---        |
 | `label`      |    `string`   |:white_check_mark:|                     | The label of the topic. This should be in english and is automatically included in the translation list. |`Movies`|
 | `i18n`       |    `object`   |       :x:        |  `{ en: <Label> }`  | The list of translations against languages keys. |`{ "zh": "电影" }`|
-| `locations`  |`array<string>`|       :x:        |                     | The list of countries to localize to. Leave empty for global context. |`["in", "uk", "us"]`|
-| `ageRange`   |`array<string>`|       :x:        |                     | The age groups to target. Leave empty to target all. |`["in", "uk", "us"]`|
+| `locations`  |`array<string>`|       :x:        |                     | The codes of countries to localize to. Leave empty for global context. |`["in", "uk", "us"]`|
+| `ageRange`   |`array<string>`|       :x:        |                     | The id of age groups to target. Leave empty to target all. |`["aidxxx1", "aidxxx2", "aidxxx3"]`|
 | `weightage`  |   `number`    |       :x:        |        `50`         | Weightage to be used to set precedence bias. |`40`|
 | `defaultTags`|`array<string>`|       :x:        |                     | Default tag ids for this topic. Polls can add extra tags if needed. |`["tidxxx1"]`|
 
@@ -106,8 +106,8 @@ Updates an existing topic.
 |     ---      |     ---       |      :---:       |     ---     |
 | `label`      |    `string`   |       :x:        | Filters the list of topics by their status. `active` topics are in use. `inactive` topics have been retired. |
 | `i18n`       |    `object`   |       :x:        | The list of translations against languages keys. |
-| `locations`  |`array<string>`|       :x:        | The list of countries to localize to. Leave empty for global context. |
-| `ageRange`   |`array<string>`|       :x:        | The age groups to target. Leave empty to target all. |
+| `locations`  |`array<string>`|       :x:        | The codes of countries to localize to. Leave empty for global context. |
+| `ageRange`   |`array<string>`|       :x:        | The ids of age groups to target. Leave empty to target all. |
 | `weightage`  |   `number`    |       :x:        | Weightage to be used to set precedence bias. |
 | `defaultTags`|`array<string>`|       :x:        | Default tag ids for this topic. |
 
